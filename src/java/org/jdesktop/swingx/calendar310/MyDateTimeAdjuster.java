@@ -9,7 +9,6 @@ import static javax.time.calendrical.LocalDateTimeField.*;
 import static org.jdesktop.swingx.calendar310.MyDateTimeField.*;
 
 import javax.time.DayOfWeek;
-import javax.time.LocalDateTime;
 import javax.time.calendrical.AdjustableDateTime;
 import javax.time.calendrical.DateTimeAdjuster;
 import javax.time.calendrical.DateTimeField;

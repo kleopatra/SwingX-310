@@ -20,7 +20,7 @@
  */
 package org.jdesktop.swingx.demos.calendarext;
 
-import static org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ;
+import static org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.*;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -42,10 +42,10 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSpinner;
+import javax.swing.JSpinner.DefaultEditor;
 import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingUtilities;
-import javax.swing.JSpinner.DefaultEditor;
 
 import org.jdesktop.beans.AbstractBean;
 import org.jdesktop.beansbinding.BeanProperty;
@@ -58,29 +58,27 @@ import org.jdesktop.swingx.JXCollapsiblePane;
 import org.jdesktop.swingx.JXDateChooser;
 import org.jdesktop.swingx.JXPanel;
 import org.jdesktop.swingx.JXTitledSeparator;
-import org.jdesktop.swingx.appframework.SingleXFrameApplication;
 import org.jdesktop.swingx.binding.DisplayInfo;
 import org.jdesktop.swingx.binding.DisplayInfoConverter;
 import org.jdesktop.swingx.binding.LabelHandler;
 import org.jdesktop.swingx.calendar.CalendarCellState;
 import org.jdesktop.swingx.calendar.CalendarHighlightPredicates;
+import org.jdesktop.swingx.calendar.CalendarHighlightPredicates.DayOfWeekHighlightPredicate;
 import org.jdesktop.swingx.calendar.CalendarUtils;
 import org.jdesktop.swingx.calendar.DateSelectionModel;
-import org.jdesktop.swingx.calendar.DaySelectionModel;
-import org.jdesktop.swingx.calendar.CalendarHighlightPredicates.DayOfWeekHighlightPredicate;
 import org.jdesktop.swingx.calendar.DateSelectionModel.SelectionMode;
+import org.jdesktop.swingx.calendar.DaySelectionModel;
 import org.jdesktop.swingx.decorator.AbstractHighlighter;
 import org.jdesktop.swingx.decorator.ColorHighlighter;
 import org.jdesktop.swingx.decorator.ComponentAdapter;
 import org.jdesktop.swingx.decorator.HighlightPredicate;
+import org.jdesktop.swingx.decorator.HighlightPredicate.AndHighlightPredicate;
 import org.jdesktop.swingx.decorator.Highlighter;
 import org.jdesktop.swingx.decorator.HighlighterFactory;
-import org.jdesktop.swingx.decorator.HighlightPredicate.AndHighlightPredicate;
 import org.jdesktop.swingx.demos.calendarext.MonthViewDemoUtils.DayOfWeekConverter;
 import org.jdesktop.swingx.renderer.DefaultListRenderer;
 import org.jdesktop.swingx.renderer.FormatStringValue;
 import org.jdesktop.swingx.renderer.StringValue;
-import org.jdesktop.swingxset.SwingXSet;
 import org.jdesktop.swingxset.util.DemoUtils;
 import org.jdesktop.swingxset.util.DisplayValues;
 

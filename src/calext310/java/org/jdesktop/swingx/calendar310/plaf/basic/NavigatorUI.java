@@ -5,7 +5,6 @@
 package org.jdesktop.swingx.calendar310.plaf.basic;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 
@@ -16,7 +15,6 @@ import javax.swing.JLabel;
 import javax.swing.border.Border;
 import javax.time.LocalDateTime;
 
-import org.jdesktop.swingx.JXPanel;
 import org.jdesktop.swingx.calendar.jsr310.DateTimeUtils;
 import org.jdesktop.swingx.calendar310.Navigator;
 

@@ -4,11 +4,11 @@
  */
 package org.jdesktop.swingx.calendar310;
 
+import static org.jdesktop.swingx.calendar310.Page.*;
+
 import javax.time.LocalDateTime;
 
 import org.jdesktop.swingx.calendar.jsr310.DateTimeUtils;
-
-import static org.jdesktop.swingx.calendar310.Page.*;
 
 /**
  * @author Jeanette Winzenburg, Berlin

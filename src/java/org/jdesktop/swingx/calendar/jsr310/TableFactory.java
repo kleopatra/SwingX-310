@@ -24,7 +24,7 @@ import javax.swing.table.TableCellRenderer;
 import javax.time.DayOfWeek;
 import javax.time.LocalDate;
 import javax.time.OffsetDateTime;
-import javax.time.calendrical.YearMonth;
+import javax.time.YearMonth;
 
 import org.jdesktop.swingx.JXHyperlink;
 import org.jdesktop.swingx.JXTable;

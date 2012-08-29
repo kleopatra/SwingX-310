@@ -6,19 +6,14 @@ package org.jdesktop.swingx.calendar310;
 
 import java.util.logging.Logger;
 
-import javax.swing.JComponent;
 import javax.time.LocalDateTime;
 import javax.time.calendrical.DateTimeField;
 import javax.time.calendrical.PeriodUnit;
 import javax.time.format.DateTimeFormatter;
 import javax.time.format.DateTimeFormatterBuilder;
 
-import net.miginfocom.swing.MigLayout;
-
 import org.jdesktop.swingx.InteractiveTestCase;
-import org.jdesktop.swingx.JXPanel;
 import org.jdesktop.swingx.calendar.jsr310.DateTimeUtils;
-import org.jdesktop.swingx.calendar310.plaf.basic.NavigatorView;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

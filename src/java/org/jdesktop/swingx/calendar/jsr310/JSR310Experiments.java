@@ -19,7 +19,6 @@ import javax.time.LocalDateTime;
 import javax.time.Period;
 import javax.time.calendrical.LocalPeriodUnit;
 import javax.time.format.DateTimeFormatter;
-import javax.time.format.DateTimeFormatterBuilder;
 import javax.time.format.DateTimeFormatters;
 
 import org.jdesktop.swingx.InteractiveTestCase;

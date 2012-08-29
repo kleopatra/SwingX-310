@@ -24,7 +24,6 @@ import java.awt.Color;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Calendar;
 import java.util.EventListener;
 import java.util.HashMap;
 import java.util.Locale;
@@ -36,10 +35,8 @@ import java.util.logging.Logger;
 
 import javax.swing.JComponent;
 import javax.swing.UIManager;
-import javax.time.Clock;
 import javax.time.DayOfWeek;
 import javax.time.LocalDateTime;
-import javax.time.Period;
 
 import org.jdesktop.swingx.calendar.jsr310.Date310SelectionEvent.EventType;
 import org.jdesktop.swingx.calendar.jsr310.Date310SelectionModel.SelectionMode;

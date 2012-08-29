@@ -4,6 +4,8 @@
  */
 package org.jdesktop.swingx.calendar.jsr310;
 
+import static javax.time.calendrical.DateTimeAdjusters.*;
+
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -11,12 +13,9 @@ import java.util.Map;
 import javax.time.DayOfWeek;
 import javax.time.LocalDateTime;
 import javax.time.LocalTime;
-import static javax.time.calendrical.DateTimeAdjusters.*;
-import javax.time.calendrical.DateTimeAdjusters;
 import javax.time.calendrical.DateTimeField;
 import javax.time.calendrical.LocalDateTimeField;
-import static javax.time.calendrical.LocalDateTimeField.*;
-import javax.time.calendrical.WeekContext;
+import javax.time.calendrical.WeekDefinition;
 import javax.time.format.DateTimeFormatters;
 import javax.time.format.DateTimeTextProvider;
 import javax.time.format.TextStyle;
@@ -61,7 +60,7 @@ public class DateTimeUtils {
      * @return
      */
     public static DayOfWeek getFirstDayOfWeek(Locale locale) {
-        WeekContext context = WeekContext.of(locale);
+        WeekDefinition context = WeekDefinition.of(locale);
         return context.getFirstDayOfWeek();
 //        Calendar calendar = Calendar.getInstance(locale);
 //        int first = calendar.getFirstDayOfWeek();

@@ -62,7 +62,6 @@ import javax.swing.plaf.UIResource;
 import javax.time.DayOfWeek;
 import javax.time.LocalDateTime;
 import javax.time.Month;
-import javax.time.calendrical.YearMonth;
 import javax.time.format.DateTimeFormatter;
 import javax.time.format.DateTimeFormatterBuilder;
 import javax.time.format.DateTimeFormatters;

@@ -5,7 +5,6 @@
 package org.jdesktop.swingx.calendar310;
 
 import javax.time.LocalDateTime;
-import javax.time.calendrical.DateTimeField;
 
 /**
  * Controller to navigate on a Calendar page in a grid of details. Navigation

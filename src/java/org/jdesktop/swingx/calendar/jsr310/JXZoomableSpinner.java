@@ -24,9 +24,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.time.OffsetDateTime;
 import javax.time.format.DateTimeFormatter;
-import javax.time.format.DateTimeFormatterBuilder;
 import javax.time.format.DateTimeFormatters;
-import javax.time.format.TextStyle;
 
 import org.jdesktop.swingx.JXHyperlink;
 import org.jdesktop.swingx.JXPanel;

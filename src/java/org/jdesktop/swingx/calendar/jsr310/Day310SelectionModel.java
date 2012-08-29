@@ -26,7 +26,6 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 import javax.time.LocalDateTime;
-import javax.time.Period;
 
 import org.jdesktop.swingx.calendar.jsr310.Date310SelectionEvent.EventType;
 import org.jdesktop.swingx.event.EventListenerMap;

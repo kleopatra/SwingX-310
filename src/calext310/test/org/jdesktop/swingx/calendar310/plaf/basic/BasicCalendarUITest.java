@@ -4,8 +4,6 @@
  */
 package org.jdesktop.swingx.calendar310.plaf.basic;
 
-import static org.junit.Assert.*;
-
 import javax.time.calendrical.LocalDateTimeField;
 
 import org.jdesktop.swingx.InteractiveTestCase;
