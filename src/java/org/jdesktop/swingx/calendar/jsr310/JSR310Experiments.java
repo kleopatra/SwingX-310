@@ -4,25 +4,38 @@
  */
 package org.jdesktop.swingx.calendar.jsr310;
 
+import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.text.Format;
+import java.util.Date;
 import java.util.Locale;
 import java.util.logging.Logger;
 
+import javax.swing.AbstractAction;
+import javax.swing.Action;
 import javax.swing.Box;
 import javax.swing.JComponent;
 import javax.swing.JFormattedTextField;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JSpinner;
-import javax.swing.SpinnerModel;
+import javax.swing.JTextField;
 import javax.time.LocalDateTime;
 import javax.time.Period;
+import javax.time.calendrical.DateTime;
 import javax.time.calendrical.LocalPeriodUnit;
 import javax.time.format.DateTimeFormatter;
+import javax.time.format.DateTimeFormatterBuilder;
 import javax.time.format.DateTimeFormatters;
+import javax.time.format.FormatStyle;
+
+import net.miginfocom.swing.MigLayout;
 
 import org.jdesktop.swingx.InteractiveTestCase;
+import org.jdesktop.swingx.JXPanel;
 import org.jdesktop.swingx.calendar.jsr310.Date310SelectionModel.SelectionMode;
+import org.jdesktop.swingx.calendar310.DatePickerFormatter310;
 
 
 public class JSR310Experiments extends InteractiveTestCase {
@@ -33,13 +46,20 @@ public class JSR310Experiments extends InteractiveTestCase {
     public static void main(String[] args) {
         JSR310Experiments test = new JSR310Experiments();
         try {
-            test.runInteractiveTests();
+//            test.runInteractiveTests();
 //            test.runInteractiveTests("interactive.*310.*");
+            test.runInteractive("Field");
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
     
+    /**
+     * Base issue: check behaviour of 2 vs. 4 y
+     */
+    public void interactiveYearFormat() {
+//       JXDatePicker coreFormatPicker = new JXDatePicker(new Date()); 
+    }
     
     
     public void interactive310MonthViewGerman() {
@@ -79,7 +99,8 @@ public class JSR310Experiments extends InteractiveTestCase {
 //    }
  
     public void interactiveDateSpinner() {
-        SpinnerModel model = new OffsetDateTimeSpinnerModel(Period.of(1, LocalPeriodUnit.MONTHS));
+        OffsetDateTimeSpinnerModel model = new OffsetDateTimeSpinnerModel(
+                Period.of(1, LocalPeriodUnit.MONTHS));
         JSpinner spinner = new JSpinner(model);
         JComponent box = Box.createHorizontalBox();
         box.add(spinner);

@@ -114,12 +114,6 @@ public enum MyDateTimeField implements DateTimeField {
         return range().checkValidValue(value, this);
     }
 
-//    @Override
-//    public <R extends DateTime> R roll(R calendrical, long roll) {
-//        // TODO Auto-generated method stub
-//        return null;
-//    }
-
     @Override
     public boolean resolve(DateTimeBuilder builder, long value) {
         // TODO Auto-generated method stub
